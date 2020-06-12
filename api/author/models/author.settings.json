@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "authors",
+  "info": {
+    "name": "author"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "maxLength": 100
+    },
+    "dateOfBirth": {
+      "type": "date"
+    },
+    "booksPublished": {
+      "type": "integer",
+      "min": 1,
+      "default": 1,
+      "required": true
+    }
+  }
+}
